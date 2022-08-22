@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://jakewarren2414.github.io/FirstFastpages/sitemap.xml
