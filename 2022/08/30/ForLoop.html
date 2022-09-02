@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -147,9 +147,94 @@ window.onload = wrap_img;
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jacobw22751@stu.powayusd.com"</span><span class="p">,</span>
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2016-Toyota Tacoma"</span><span class="p">]</span>
 <span class="p">})</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Finn"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Carpenter"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"December 12"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"FavoriteFood"</span><span class="p">:</span> <span class="s2">"Pizza"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"finnc51448@stu.powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2012 Nissan Xterra"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">),</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"LastName:"</span><span class="p">),</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Birthday:"</span><span class="p">),</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Residence:"</span><span class="p">),</span>
+    <span class="s2">"FavoriteFood"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"FavoriteFood:"</span><span class="p">),</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Email:"</span><span class="p">),</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Owns_Cars:"</span><span class="p">)</span>
+<span class="p">})</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"FavoriteFood:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"FavoriteFood"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">])</span> 
+    <span class="nb">print</span><span class="p">()</span>
+
+
+
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+
+<span class="n">for_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+Jake Warren
+	 Residence: San Diego
+	 FavoriteFood: Burger
+	 Birth Day: September 8
+	 Cars: ['2016-Toyota Tacoma']
+
+Finn Carpenter
+	 Residence: San Diego
+	 FavoriteFood: Pizza
+	 Birth Day: December 12
+	 Cars: ['2012 Nissan Xterra']
+
+Jake  Warren
+	 Residence: San Diego
+	 FavoriteFood: Burger
+	 Birth Day: September 8
+	 Cars: Tacoma
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -196,10 +281,109 @@ window.onload = wrap_img;
 
 Jake Warren
 	 Residence: San Diego
-	 Favorite food: Burger
-	 Birth Day: September 8
+	 FavoriteFood: Burger
+	 DOB: September 8
 	 Cars: 2016-Toyota Tacoma
 
+Finn Carpenter
+	 Residence: San Diego
+	 FavoriteFood: Pizza
+	 DOB: December 12
+	 Cars: 2012 Nissan Xterra
+
+Jake  fd
+	 Residence: sv
+	 FavoriteFood: sfv
+	 DOB: fsdf
+	 Cars: </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span>     for record in InfoDb:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span>         print_data(record)
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> for_loop()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb Cell 3</span> in <span class="ansi-cyan-fg">for_loop</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> print("For loop output\n")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> for record in InfoDb:
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span>     print_data(record)
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb Cell 3</span> in <span class="ansi-cyan-fg">print_data</span><span class="ansi-blue-fg">(d_rec)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> print("\t", "DOB:", d_rec["DOB"])
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> print("\t", "Cars: ", end="") 
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> print(", ".join(d_rec["Owns_Cars"]))  
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2022-08-30-ForLoop.ipynb#W1sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> print()
+
+<span class="ansi-red-fg">KeyError</span>: 'Owns_Cars'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q1</span> <span class="o">=</span> <span class="s2">"""Is the sky blue</span>
+<span class="s2">a. Yes</span>
+<span class="s2">b. No"""</span>
+
+<span class="n">q2</span> <span class="o">=</span> <span class="s2">"""How many states are there in the US?</span>
+<span class="s2">a. 45</span>
+<span class="s2">b. 50</span>
+<span class="s2">c. 100"""</span>
+
+
+<span class="n">questions</span> <span class="o">=</span> <span class="p">{</span><span class="n">q1</span><span class="p">:</span><span class="s2">"a"</span><span class="p">,</span><span class="n">q2</span><span class="p">:</span><span class="s2">"b"</span><span class="p">}</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter your name:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter the answer: (a/b):"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ans</span><span class="o">==</span><span class="n">questions</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"correct"</span><span class="p">)</span>
+        <span class="n">score</span><span class="o">=</span><span class="n">score</span><span class="o">+</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="s2">"point"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"wrong"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello Jake
+Is the sky blue
+a. Yes
+b. No
+correct
+1 point
+How many states are there in the US?
+a. 45
+b. 50
+c. 100
+wrong
 </pre>
 </div>
 </div>
