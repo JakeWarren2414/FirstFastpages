@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: My class scheduale and times of every class. 
-categories: [markdown]
+categories: [School]
 title: School Page
 ---
 # School Page 

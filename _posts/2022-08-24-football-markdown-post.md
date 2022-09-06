@@ -2,7 +2,7 @@
 toc: true 
 layout: post
 description: This is my first markdown post
-categories: [markdown]
+categories: [Football]
 title: Football
 ---
 # Jakes Blog
