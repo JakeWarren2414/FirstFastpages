@@ -51,3 +51,4 @@ restart-jekyll: .FORCE
 
 .FORCE:
 	chmod -R u+rw .
+
