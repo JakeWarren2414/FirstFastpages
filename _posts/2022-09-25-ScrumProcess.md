@@ -1,0 +1,1 @@
+![Bell]({{site.baseurl}}/images/ScrumProcess.png)
