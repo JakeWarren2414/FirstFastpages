@@ -27,8 +27,7 @@
  ### Video 3 
 
 ## Quiz Results
-![Results]({{site.baseurl}}/images/QuizResults.jpg)
-![Results]({{site.baseurl}}/images/CollegeQuiz.png)
+![Results]({{site.baseurl}}/images/CollegeQuiz.jpg)
 
 ## Hacks
 - Me and my partner did not know each other before oming to this class
