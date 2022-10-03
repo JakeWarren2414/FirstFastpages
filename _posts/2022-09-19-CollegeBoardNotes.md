@@ -28,7 +28,7 @@
 
 ## Quiz Results
 
-![Results]({{site.baseurl}}/images/CollegeQuiz.jpg)
+![Results]({{site.baseurl}}/images/CollegeQuiz.png)
 
 ## Hacks
 - Me and my partner did not know each other before oming to this class
