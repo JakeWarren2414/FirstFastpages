@@ -23,10 +23,12 @@
 - Think-pair-share is a process where a student thinks through a process alone. Then they find a parter and share their ideas with them then the class.
 - Comments in code help partners
 - Github is a great way to work together
-
+ 
+ ### Video 3 
 
 ## Quiz Results
 ![Results]({{site.baseurl}}/images/QuizResults.jpg)
+![Results]({{site.baseurl}}/images/CollegeQuiz.png)
 
 ## Hacks
 - Me and my partner did not know each other before oming to this class
