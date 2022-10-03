@@ -27,6 +27,7 @@
  ### Video 3 
 
 ## Quiz Results
+
 ![Results]({{site.baseurl}}/images/CollegeQuiz.jpg)
 
 ## Hacks
