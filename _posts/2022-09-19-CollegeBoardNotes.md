@@ -28,7 +28,7 @@
 
 ## Quiz Results
 
-![Results]({{site.baseurl}}/images/9CollegeBoard.png)
+![Results]({{site.baseurl}}/images/CollegeBoardQuiz.png)
 
 
 ## Practice Questions
