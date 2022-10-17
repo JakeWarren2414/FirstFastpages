@@ -28,7 +28,7 @@
 
 ## Quiz Results
 
-![Results]({{site.baseurl}}/images/CollegeBoardQuiz.png)
+![Results]({{site.baseurl}}/images/IntrnetQuiz.png)
 
 
 ## Practice Questions
@@ -53,3 +53,11 @@
 - He likes skateboarding and I like football as our main hobbies
 - We do have a lot of similariities though
 - We are both new to coding but have differnt skills. He understandssome code better and I understand other code better. 
+
+
+
+## 4.1 
+
+- I was able to learn the relationship between the internet and the World Wide Web. WWW is a system of linked pages that is accessed through the internet which is a network.
+- I also learned how messages work. They are broken into packets. These packets are then transfered and no matter what order they were scrambled in they are put back together in the correct order. 
+- Protocalls provide a way to standardize data transmission between different devices 
