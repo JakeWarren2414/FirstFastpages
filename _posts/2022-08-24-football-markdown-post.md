@@ -56,7 +56,7 @@ Record: 2-0
             <td>Hell of a Year</td>
             <td>Wasted on You</td>
             <td>Condemned</td>
-            <td>Locin' On You</td>
+            <td>Lovin' On You</td>
             </tr>
         <tr>
             <td>5.</td>
@@ -64,6 +64,19 @@ Record: 2-0
             <td>Handle On You</td>
             <td>More Than My Hometown</td>
             <td>Late July</td>
-            <td>Even Thoug I'm Leaving</td>
+            <td>Even Though I'm Leaving</td>
             </tr>
         </table> 
+        <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Top Five Country Artists</strong></h1>
+        <h2 class="text-primary"><strong>Chris Stapleton </strong></h2>
+        <p class="text-secondary">Chris is a very lyrical country artist and mellow. He ususally plays the guitar. His music follows the path of a story.</p>
+        <h2 class="text-primary"><strong>Parker McCollum</strong></h2>
+        <p class="text-secondary"> </p>
+        <h2 class="text-primary"><strong>Morgan Wallen</strong></h2>
+        <p class="text-secondary"> </p>
+        <h2 class="text-primary"><strong>Zach Bryan</strong></h2>
+        <p class="text-secondary"> </p>
+        <h2 class="text-primary"><strong>Luke Combs</strong></h2>
+        <p class="text-secondary"> </p>
+    </div> 
