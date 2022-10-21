@@ -24,41 +24,46 @@ Record: 2-0
             <th>Parker McCollum</th>
             <th>Morgan Wallen</th>
             <th>Zach Bryan </th>
-            <th>Luke Bryant</th>
+            <th>Luke Combs</th>
             </tr>
         <tr>
             <td>1.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>A Simple Song</td>
+            <td>Pretty Heart</td>
+            <td>Chasin' You</td>
+            <td>Something in the Orange</td>
+            <td>When It Rains It Pours</td>
             </tr>
         <tr>
             <td>2.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Tennessee Whisky</td>
+            <td>Young Man's Blues</td>
+            <td>You Proof</td>
+            <td>Heading South</td>
+            <td>Beautiful Crazy</td>
             </tr>
         <tr>
             <td>3.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Starting Over</td>
+            <td>To Be Loved By You</td>
+            <td>Whiskey Glasses</td>
+            <td>Revival</td>
+            <td>Beer Never Broke My Heart</td>
             </tr>
         <tr>
             <td>4.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Broken Halos</td>
+            <td>Hell of a Year</td>
+            <td>Wasted on You</td>
+            <td>Condemned</td>
+            <td>Locin' On You</td>
             </tr>
         <tr>
             <td>5.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Nashville, TN </td>
+            <td>Handle On You</td>
+            <td>More Than My Hometown</td>
+            <td>Late July</td>
+            <td>Even Thoug I'm Leaving</td>
             </tr>
         </table> 
