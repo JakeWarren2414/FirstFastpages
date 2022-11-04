@@ -20,9 +20,9 @@ Badges: true
 - Computer animation was a great experience. Stundets created a whole entire 3D virtual wrold. There was donuts, tables, and walls in the one I looked at. It looked as if a cartoon could have been developed from this. 
 
 ## Ceramics
-<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics" alt="Backend and Persistence" height="250">
-<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics2" alt="Backend and Persistence" height="250">
-<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics3" alt="Backend and Persistence" height="250">
+<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics.png" alt="Backend and Persistence" height="250">
+<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics2.png" alt="Backend and Persistence" height="250">
+<img src="https://jakewarren2414.github.io/FirstFastpages/images/Ceramics3.png" alt="Backend and Persistence" height="250">
 
 - I was in ceramics last year and I have it second trimester this year. It was a very fun class and this night reminded me of that. The stuents created great projects. 
 
