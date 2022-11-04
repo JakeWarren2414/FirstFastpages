@@ -1,8 +1,13 @@
 ---
-- Title: Final Project Notes
+- Title: Night at the Museum
 - toc: true
 - layout: post
+- Badges: true
+- comments: True
+- author: Jake Warren
+- Categories: [Coding]
 ---
+
 
 # Night at the Museum
 
