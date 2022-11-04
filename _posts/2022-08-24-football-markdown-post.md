@@ -67,7 +67,7 @@ Record: 2-0
             <td>Even Though I'm Leaving</td>
             </tr>
         </table> 
-        <div class="px-5 py-5 mx-auto">
+    <div class="px-5 py-5 mx-auto">
         <h1 class="text-primary"><strong>Top Five Country Artists</strong></h1>
         <h2 class="text-primary"><strong>Chris Stapleton </strong></h2>
         <p class="text-secondary">Chris is a very lyrical country artist and mellow. He ususally plays the guitar. His music follows the path of a story.</p>

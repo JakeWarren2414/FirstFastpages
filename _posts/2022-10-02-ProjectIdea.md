@@ -15,3 +15,8 @@
 - Row 4: Procedural Abstraction. We will understand our process nd manage our time well. 
 - Row 5: Algorithm Implementation. Organizign by genre, artist, and songs will show this. 
 - Row 6: Testing. Testing will occur after we create the webstie. We will make sure every page is running well. 
+
+
+## Hacks
+- Some similarities I see are that the tables are created in the same way between both verions of code. Both check for errors in the similar ways. "If (response.status !==200)" is used for both. They also both use the "Get, Post, Put, Delete" method for preparing fetch options. Both use console.log(data). 
+- In the first block the code is making a table of covid cases. It shows a time, All-time cases, recorded Deaths, and active cases column. There is also a table that seperates into a Joke, Haha and BooBoo. There is a joke and a number of Boohoos or Hahas. The next block of code is making a variables for this Boohoo or Haha and allowing the user to input if the like the joke or not. Then the next block of code is making that into a API so the data is shared between all users. 
