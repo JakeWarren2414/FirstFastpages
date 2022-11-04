@@ -3,16 +3,13 @@
 - toc: true
 - layout: post
 - Badges: true
-- comments: True
-- author: Jake Warren
-- Categories: [Coding]
 ---
 
 
 # Night at the Museum
 
 ## Computer Science
-<img src="images/LiacProject.png" alt="Backend and Persistence" height="250">
+<img src="images/LiavProject.png" alt="Backend and Persistence" height="250">
 
 - Striver is a social media website that allows people to like posts that other users posted. On the website the user can make a post and talk about anything on it. It also has an inspirational quote generator that uses an API to fetch data on random quotes
 - Quinn Eliabeth was an online shopping website. Its frontend was amazing. You could pick pieces of clothing and add them to cart. It adds to your overall price. 
