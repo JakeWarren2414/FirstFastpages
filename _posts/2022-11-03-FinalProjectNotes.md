@@ -2,10 +2,6 @@
 - Title: Final Project Notes
 - toc: true
 - layout: post
-- Badges: true
-- comments: True
-- author: Jake Warren
-- Categories: [Coding]
 ---
 
 # Night at the Museum
@@ -28,6 +24,7 @@
 <img src="images/Ceramics3" alt="Backend and Persistence" height="250">
 
 - I was in ceramics last year and I have it second trimester this year. It was a very fun class and this night reminded me of that. The stuents created great projects. 
+
 ## Drawing and Painting
 <img src="images/Drawing.png" alt="Backend and Persistence" height="250">
 <img src="images/Drawing2.png" alt="Backend and Persistence" height="250">
