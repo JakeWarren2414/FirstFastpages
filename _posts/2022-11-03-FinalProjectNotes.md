@@ -1,10 +1,9 @@
 ---
-- Title: Night at the Museum
-- toc: true
-- layout: post
-- Badges: true
+Title: Night at the Museum
+toc: true
+layout: post
+Badges: true
 ---
-
 
 # Night at the Museum
 
