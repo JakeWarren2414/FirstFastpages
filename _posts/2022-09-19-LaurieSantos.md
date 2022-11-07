@@ -27,6 +27,13 @@
 
 ### My Friend
 - I am grateful for you Ethan. You are always by my side and ever since I figured out we were neighbors I have had a great time. We have been best friends for a while now. 
+- I am grateful for my ability to avance my life into the next step. For the ability to be the best possible version of my self
+- I am grateful for easy access to a gym whether it be my friends gym or LA Fitness.
+- I am grateful for my teammates and our chance at a championhsip
+- I am grateful for the wealth I have been given 
+- I am grateful for the mistakes I have made along the way on my journey. I have learned greatly from all of these mistakes and I am a beter man for it.
+- I am grateful for my parents and their ability to provide me with all I need
+
 
 ### Response
 - Thank you Jake. I appreciate you too. You have always been there for me too. i am very happy we have had this friendship. 
