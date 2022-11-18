@@ -8,11 +8,11 @@ categories: []
 tags: [html, liquid, javascript]
 ---
 
-<!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
+<!-- Hack 1: add a character display to text when 8 bits, determine if printjable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-{% assign BITS = 3 %}
+{% assign BITS = 24 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -26,6 +26,7 @@ tags: [html, liquid, javascript]
                 <th>Binary</th>
                 <th>Octal</th>
                 <th>Hexadecimal</th>
+                <th>Color Code </th>
                 <th>Decimal</th>
                 <th>Minus</th>
             </tr>
@@ -34,6 +35,7 @@ tags: [html, liquid, javascript]
                 <td id="binary">00000000</td>
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
+                <td id="colorcode">00</td>
                 <td id="decimal">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
@@ -63,6 +65,7 @@ tags: [html, liquid, javascript]
 </div>
 
 <script>
+    let hexValue = "";
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
@@ -86,6 +89,7 @@ tags: [html, liquid, javascript]
         // Hexadecimal conversion
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
+        document.getElementById('colorcode').innerHTML = hexValue = parseInt(binary, 2).toString(16);
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
     }
     //
