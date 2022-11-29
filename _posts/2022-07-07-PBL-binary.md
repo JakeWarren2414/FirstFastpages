@@ -13,7 +13,7 @@ tags: [html, liquid, javascript]
 <!-- Hack 3: do your own thing -->
 
 {% assign BITS = 24 %}
-
+<p>no</p>
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math with Conversions</span>
@@ -27,6 +27,7 @@ tags: [html, liquid, javascript]
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Color Code </th>
+                <th>Color</th>
                 <th>Decimal</th>
                 <th>Minus</th>
             </tr>
@@ -36,6 +37,7 @@ tags: [html, liquid, javascript]
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="colorcode">00</td>
+                <td id="myDiv"></td>
                 <td id="decimal">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
@@ -90,6 +92,9 @@ tags: [html, liquid, javascript]
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('colorcode').innerHTML = hexValue = parseInt(binary, 2).toString(16);
+        var color = "#" + hexValue;
+        var element = document.querySelector("myDiv");
+        myDiv.style.backgroundColor = color;
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
     }
     //
