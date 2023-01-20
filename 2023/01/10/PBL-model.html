@@ -396,11 +396,12 @@ Test 4, make a dictionary
 
 <span class="k">class</span> <span class="nc">User</span><span class="p">:</span>    
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">weight</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_email</span> <span class="o">=</span> <span class="n">email</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_weight</span> <span class="o">=</span> <span class="n">weight</span>
     
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -459,7 +460,8 @@ Test 4, make a dictionary
             <span class="s2">"email"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="p">,</span>
             <span class="s2">"dob"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">dob</span><span class="p">,</span>
             <span class="s2">"age"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span>
-            <span class="s2">"classOf"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span>
+            <span class="s2">"classOf"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span><span class="p">,</span>
+            <span class="s2">"weight"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_weight</span>
         <span class="p">}</span>
         <span class="k">return</span> <span class="nb">dict</span>
     
@@ -484,7 +486,7 @@ Test 4, make a dictionary
     
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Jake Warren'</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">'Jacobw22751@stu.powayusd.com'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'Jake2414'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Jake Warren'</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">'Jacobw22751@stu.powayusd.com'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'Jake2414'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">weight</span><span class="o">=</span><span class="s1">'155'</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"JSON ready string:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
 
 <span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="n">person</span><span class="p">):</span>
@@ -506,7 +508,7 @@ Test 4, make a dictionary
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>JSON ready string:
- {"name": "Jake Warren", "email": "Jacobw22751@stu.powayusd.com", "dob": "09-08-2005", "age": 17, "classOf": 2024} 
+ {"name": "Jake Warren", "email": "Jacobw22751@stu.powayusd.com", "dob": "09-08-2005", "age": 17, "classOf": 2024, "weight": "155"} 
 
 </pre>
 </div>
@@ -518,6 +520,14 @@ Test 4, make a dictionary
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I added weight to relate to my project</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
