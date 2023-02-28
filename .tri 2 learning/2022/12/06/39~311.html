@@ -1,76 +1,76 @@
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>3.9-3.11- Deveoping Algorithms/Binary Search | Jakes Fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="3.9-3.11- Deveoping Algorithms/Binary Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I am a sudent at Del Norte High School and I play football." />
+<meta property="og:description" content="I am a sudent at Del Norte High School and I play football." />
+<link rel="canonical" href="https://jakewarren2414.github.io/FirstFastpages/.tri%202%20learning/2022/12/06/39~311.html" />
+<meta property="og:url" content="https://jakewarren2414.github.io/FirstFastpages/.tri%202%20learning/2022/12/06/39~311.html" />
+<meta property="og:site_name" content="Jakes Fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-06T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="3.9-3.11- Deveoping Algorithms/Binary Search" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-06T00:00:00-06:00","datePublished":"2022-12-06T00:00:00-06:00","description":"I am a sudent at Del Norte High School and I play football.","headline":"3.9-3.11- Deveoping Algorithms/Binary Search","mainEntityOfPage":{"@type":"WebPage","@id":"https://jakewarren2414.github.io/FirstFastpages/.tri%202%20learning/2022/12/06/39~311.html"},"url":"https://jakewarren2414.github.io/FirstFastpages/.tri%202%20learning/2022/12/06/39~311.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FirstFastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jakewarren2414.github.io/FirstFastpages/feed.xml" title="Jakes Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">3.9-3.11- Deveoping Algorithms/Binary Search</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-06T00:00:00-06:00" itemprop="datePublished">
-        Dec 6, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      4 min read
-    
-</span></p>
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/FirstFastpages/categories/#.tri 2 learning">.tri 2 learning</a>
-        
-      
-      </p>
-    
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
+  <div class="wrapper"><a class="site-title" rel="author" href="/FirstFastpages/">Jakes Fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-    <a href="https://github.com/JakeWarren2414/FirstFastpages/tree/master/_notebooks/2022-12-06-39~311.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/FirstFastpages/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/JakeWarren2414/FirstFastpages/master?filepath=_notebooks%2F2022-12-06-39~311.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/FirstFastpages/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/JakeWarren2414/FirstFastpages/blob/master/_notebooks/2022-12-06-39~311.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/FirstFastpages/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FJakeWarren2414%2FFirstFastpages%2Fblob%2Fmaster%2F_notebooks%2F2022-12-06-39~311.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/FirstFastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
-      </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#3.9/3.11--Deveoping-Algorithms/Binary-Search">3.9/3.11- Deveoping Algorithms/Binary Search </a></li>
-<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a></li>
-<li class="toc-entry toc-h2"><a href="#Hacks-2">Hacks 2 </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Natural-lang">Natural lang </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h1"><a href="##"># </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#Hack-4">Hack 4 </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h1"><a href="#Vocab">Vocab </a></li>
-</ul><!--
+        <div class="trigger"><a class="page-link" href="/FirstFastpages/about/">About Me</a><a class="page-link" href="/FirstFastpages/search/">Search</a><a class="page-link" href="/FirstFastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -79,13 +79,9 @@
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.9/3.11--Deveoping-Algorithms/Binary-Search">
-<a class="anchor" href="#3.9/3.11--Deveoping-Algorithms/Binary-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.9/3.11- Deveoping Algorithms/Binary Search<a class="anchor-link" href="#3.9/3.11--Deveoping-Algorithms/Binary-Search"> </a>
-</h1>
-<ul>
+<h1 id="3.9/3.11--Deveoping-Algorithms/Binary-Search">3.9/3.11- Deveoping Algorithms/Binary Search<a class="anchor-link" href="#3.9/3.11--Deveoping-Algorithms/Binary-Search"> </a></h1><ul>
 <li>Algorithms</li>
 <li>You can make a grade callulator based on a certain persecntage and arithmetic</li>
 <li>When collaborating or working on group projects, two people might come up with two different ways to solve a problem, and that happens a lot.</li>
@@ -101,36 +97,29 @@
 </ul>
 </li>
 <li>Binary Search: To divide a serach interval in half multiple times until something stops it </li>
-<li>
+<li></li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
-</h1>
+<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hack-1">
-<a class="anchor" href="#Hack-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1<a class="anchor-link" href="#Hack-1"> </a>
-</h2>
+<h2 id="Hack-1">Hack 1<a class="anchor-link" href="#Hack-1"> </a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>It is important to know that algorithms that look different can do the same thing and algorithms that look the same might have differnt results for multiple reason. If you are working with a team you have to understand what their code is saying so you can use it with them. Also it allows you to make different types of code and understand it better making you an even better programmer. </li>
-<li>
+<li></li>
 </ol>
 
 </div>
@@ -148,12 +137,12 @@
 
 <span class="c1">#If Statements</span>
 <span class="k">if</span> <span class="n">isFriday</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Go to Canes"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Go to Canes&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's not Friday and that sucks"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s not Friday and that sucks&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">isThurday</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Go to practice"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Go to practice&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -190,9 +179,9 @@
 <span class="n">doHomework</span> <span class="o">=</span> <span class="n">isThursday</span> <span class="ow">or</span> <span class="ow">not</span><span class="p">(</span><span class="n">isFriday</span><span class="p">)</span>
 <span class="c1"># If statements</span>
 <span class="k">if</span> <span class="n">doHomework</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Don't do Homework"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Don&#39;t do Homework&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Do Homework"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Do Homework&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -216,24 +205,16 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hacks-2">
-<a class="anchor" href="#Hacks-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 2<a class="anchor-link" href="#Hacks-2"> </a>
-</h2>
-<p><img src="/FirstFastpages/images/copied_from_nb/../images/DrinkFlowchart2.png" alt="Flowchart"></p>
+<h2 id="Hacks-2">Hacks 2<a class="anchor-link" href="#Hacks-2"> </a></h2><p><img src="/FirstFastpages/images/copied_from_nb/../images/DrinkFlowchart2.png" alt="Flowchart" /></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Natural-lang">
-<a class="anchor" href="#Natural-lang" aria-hidden="true"><span class="octicon octicon-link"></span></a>Natural lang<a class="anchor-link" href="#Natural-lang"> </a>
-</h3>
-<ul>
+<h3 id="Natural-lang">Natural lang<a class="anchor-link" href="#Natural-lang"> </a></h3><ul>
 <li>Start</li>
 <li>Are you old enought to drink</li>
 <li>if not wait a year</li>
@@ -261,10 +242,10 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">21</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">money</span> <span class="o">&gt;=</span> <span class="mf">3.99</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Here is your Drink"</span><span class="p">)</span>
-        <span class="c1">#if they don't have enough money they will say they are poor</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is your Drink&quot;</span><span class="p">)</span>
+        <span class="c1">#if they don&#39;t have enough money they will say they are poor</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"im poor"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;im poor&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -292,12 +273,9 @@ Here is your Drink
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hack-3">
-<a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
-</h2>
+<h2 id="Hack-3">Hack 3<a class="anchor-link" href="#Hack-3"> </a></h2>
 </div>
 </div>
 </div>
@@ -321,23 +299,23 @@ Here is your Drink
 
 <span class="c1"># print(number)     #for testing purposes</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I'm thinking of a number between 1 and 100."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;I&#39;m thinking of a number between 1 and 100.&quot;</span><span class="p">)</span>
 
 <span class="c1">#Write a function that gets a guess from the user using input()</span>
 <span class="k">def</span> <span class="nf">guess</span><span class="p">():</span>
     <span class="c1">#add something here</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is the number you are thinking of?"</span><span class="p">)</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the number you are thinking of?&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">num</span> <span class="c1">#add something here </span>
 
 <span class="c1">#Change the print statements to give feedback on whether the player guessed too high or too low</span>
 <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
     <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"You guessed too low"</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You guessed too low&quot;</span><span class="p">)</span> <span class="c1">#change this</span>
         <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span>
         <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
     <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"You guessed too high"</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You guessed too high&quot;</span><span class="p">)</span> <span class="c1">#change this</span>
         <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">guess</span>
         <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
     <span class="k">else</span><span class="p">:</span>
@@ -347,14 +325,14 @@ Here is your Drink
 <span class="k">while</span> <span class="n">user_guess</span> <span class="o">!=</span> <span class="n">number</span><span class="p">:</span>
     <span class="n">user_guess</span> <span class="o">=</span> <span class="n">guess</span><span class="p">()</span>
     <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You guessed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
     <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">user_guess</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">upper_bound</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
         <span class="k">break</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Guess a number between </span><span class="si">{</span><span class="n">lower_bound</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Guess a number between </span><span class="si">{</span><span class="n">lower_bound</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s2"> guesses!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s2"> guesses!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -367,7 +345,7 @@ Here is your Drink
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>I'm thinking of a number between 1 and 100.
+<pre>I&#39;m thinking of a number between 1 and 100.
 You guessed 50.
 You guessed too high
 Guess a number between 0 and 50.
@@ -398,29 +376,22 @@ You guessed the number in 7 guesses!
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="#">
-<a class="anchor" href="##" aria-hidden="true"><span class="octicon octicon-link"></span></a>#<a class="anchor-link" href="##"> </a>
-</h1>
+<h1 id="#">#<a class="anchor-link" href="##"> </a></h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/FirstFastpages/images/copied_from_nb/../images/RandomFlowchart.png" alt="Flowchart"></p>
+<p><img src="/FirstFastpages/images/copied_from_nb/../images/RandomFlowchart.png" alt="Flowchart" /></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hack-4">
-<a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
-</h2>
+<h2 id="Hack-4">Hack 4<a class="anchor-link" href="#Hack-4"> </a></h2>
 </div>
 </div>
 </div>
@@ -487,18 +458,16 @@ You guessed the number in 7 guesses!
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/FirstFastpages/images/copied_from_nb/../images/Chart1.png" alt="Flowchart">
-<img src="/FirstFastpages/images/copied_from_nb/../images/Chart2.png" alt="Flowchart">
-<img src="/FirstFastpages/images/copied_from_nb/../images/Chart3.png" alt="Flowchart"></p>
+<p><img src="/FirstFastpages/images/copied_from_nb/../images/Chart1.png" alt="Flowchart" />
+<img src="/FirstFastpages/images/copied_from_nb/../images/Chart2.png" alt="Flowchart" />
+<img src="/FirstFastpages/images/copied_from_nb/../images/Chart3.png" alt="Flowchart" /></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>Set 1: 80, Set 2: 74, Set 3: 96</li>
@@ -507,8 +476,7 @@ You guessed the number in 7 guesses!
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>C is unsorted therefore it is correct. </li>
@@ -517,13 +485,9 @@ You guessed the number in 7 guesses!
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Vocab">
-<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
-</h1>
-<ul>
+<h1 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h1><ul>
 <li>Existing Algorithm: determining min or max of two or more numbers,computing the sum or average, identifying if an integer is even or odd</li>
 <li>Binary Search: To divide a serach interval in half multiple times until something stops it</li>
 <li>Boolean statments: Put into nested conditionals to cause a chain of asking wheter an item is true or false with a lot of questions.</li>
@@ -579,7 +543,7 @@ You guessed the number in 7 guesses!
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SkyBlue</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">if</span> <span class="n">SkyBlue</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"The Sky is Blue"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Sky is Blue&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -607,5 +571,33 @@ You guessed the number in 7 guesses!
 
 
 
-  </div><a class="u-url" href="/FirstFastpages/.tri%202%20learning/2022/12/06/39~311.html" hidden></a>
-</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FirstFastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://jakewarren2414.github.io/FirstFastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FirstFastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>I am a sudent at Del Norte High School and I play football.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
