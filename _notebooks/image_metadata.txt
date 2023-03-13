@@ -1,0 +1,24 @@
+---- meta data -----
+Green Square
+Internet
+PNG
+RGBA
+Original size: (16, 16)
+Scaled size: (320, 320)
+
+---- meta data -----
+Clouds Impression
+Peter Carolin
+PNG
+RGBA
+Original size: (320, 234)
+Scaled size: (320, 234)
+
+---- meta data -----
+Lassen Volcano
+Peter Carolin
+JPEG
+RGB
+Original size: (2792, 2094)
+Scaled size: (320, 240)
+
