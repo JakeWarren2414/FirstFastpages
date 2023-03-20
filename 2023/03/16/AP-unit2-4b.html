@@ -93,14 +93,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db<a class="anchor-link" href="#Schema-of-Users-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses PRAGMA statement to read schema.</p>
-</blockquote>
-<h2 id="Describe-Schema,-here-is-resource-Resource--What-is-a-database-schema?">Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?<a class="anchor-link" href="#Describe-Schema,-here-is-resource-Resource--What-is-a-database-schema?"> </a></h2><h2 id="--What-is-the-purpose-of-identity-Column-in-SQL-database?">- What is the purpose of identity Column in SQL database?<a class="anchor-link" href="#--What-is-the-purpose-of-identity-Column-in-SQL-database?"> </a></h2><h2 id="--What-is-the-purpose-of-a-primary-key-in-SQL-database?">- What is the purpose of a primary key in SQL database?<a class="anchor-link" href="#--What-is-the-purpose-of-a-primary-key-in-SQL-database?"> </a></h2><h2 id="--What-are-the-Data-Types-in-SQL-table?">- What are the Data Types in SQL table?<a class="anchor-link" href="#--What-are-the-Data-Types-in-SQL-table?"> </a></h2>
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -237,34 +229,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 24&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=20&#39;&gt;21&lt;/a&gt;</span>     cursor.close()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=21&#39;&gt;22&lt;/a&gt;</span>     conn.close()
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=23&#39;&gt;24&lt;/a&gt;</span> read()
-
-<span class="ansi-green-intense-fg ansi-bold">/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb Cell 7</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> cursor = conn.cursor()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> # Execute a SELECT statement to retrieve data from a table
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> results = cursor.execute(&#39;SELECT * FROM users&#39;).fetchall() ## Putting code into variable
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=12&#39;&gt;13&lt;/a&gt;</span> # Print the results
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/jakewarren/vscode/FirstFastpages/_notebooks/2023-03-16-AP-unit2-4b.ipynb#W6sZmlsZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span> if len(results) == 0:
-
-<span class="ansi-red-fg">OperationalError</span>: no such table: users</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -348,7 +312,10 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db<a class="anchor-link" href="#Updating-a-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
+<li>What does the hacked part do?<ul>
+<li>The hacked part </li>
+</ul>
+</li>
 <li>Explain try/except, when would except occur?</li>
 <li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
@@ -419,8 +386,14 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Delete-a-User-in-table-in-Sqlite.db">Delete a User in table in Sqlite.db<a class="anchor-link" href="#Delete-a-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>Yes ebcause you could accidently delete the wrong data forever</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>The print statement pritns a statement and the {uid} adds the uid to the statement.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -481,8 +454,14 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Menu-Interface-to-CRUD-operations">Menu Interface to CRUD operations<a class="anchor-link" href="#Menu-Interface-to-CRUD-operations"> </a></h1><blockquote><p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>The menu repeats because of was not defined to stop. </li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>You could make it work with a list because you could add the different CRUD functions to a list. </li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -521,20 +500,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Perform Jupyter &#39;Run All&#39; prior to starting menu
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
