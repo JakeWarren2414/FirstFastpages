@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hashmaps Hacks | Jakes Fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Hashmaps Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is my blog for the hashmaps hacks" />
+<meta property="og:description" content="This is my blog for the hashmaps hacks" />
+<link rel="canonical" href="https://jakewarren2414.github.io/FirstFastpages/.%20practice/2023/03/30/HashmapsHacks-copy.html" />
+<meta property="og:url" content="https://jakewarren2414.github.io/FirstFastpages/.%20practice/2023/03/30/HashmapsHacks-copy.html" />
+<meta property="og:site_name" content="Jakes Fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hashmaps Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-30T00:00:00-05:00","datePublished":"2023-03-30T00:00:00-05:00","description":"This is my blog for the hashmaps hacks","headline":"Hashmaps Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://jakewarren2414.github.io/FirstFastpages/.%20practice/2023/03/30/HashmapsHacks-copy.html"},"url":"https://jakewarren2414.github.io/FirstFastpages/.%20practice/2023/03/30/HashmapsHacks-copy.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FirstFastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jakewarren2414.github.io/FirstFastpages/feed.xml" title="Jakes Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FirstFastpages/">Jakes Fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FirstFastpages/about/">About Me</a><a class="page-link" href="/FirstFastpages/search/">Search</a><a class="page-link" href="/FirstFastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-30-HashmapsHacks copy.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><ul>
+<li>Answer <em>ALL</em> questions in the code segments</li>
+<li><p>Create a venn diagram or other compare and contrast tool related to hashmaps.</p>
+<ul>
+<li>What are the pro and cons of using this data structure? </li>
+<li>Dictionary vs List<br />
+<img src="/FirstFastpages/images/copied_from_nb/../images/ListsVDicts.png" alt="Q16" /></li>
+</ul>
+</li>
+<li><p>Expand upon the code given to you, possible improvements in comments</p>
+</li>
+<li>Build your own album showing features of a python dictionary</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rhcp_albums</span> <span class="o">=</span> <span class="p">{</span> 
+    <span class="s1">&#39;californication&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Californication&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Red Hot Chilli Peppers&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">1999</span><span class="p">,</span>
+        <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Punk-rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Alternative-rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Funk Rock&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;tracks&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Scar Tissue&quot;</span><span class="p">,</span>
+            <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Savior&quot;</span><span class="p">,</span>
+            <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Otherside&quot;</span><span class="p">,</span>
+            <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;Parallel Universe&quot;</span><span class="p">,</span>
+            <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;The Velvet Glove&quot;</span><span class="p">,</span>
+            <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;I Like Dirt&quot;</span><span class="p">,</span>
+            <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;Easily&quot;</span><span class="p">,</span>
+            <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;Emit Remmus&quot;</span><span class="p">,</span>
+            <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;Road Trippin&#39;&quot;</span><span class="p">,</span>
+            <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;Get on Top&quot;</span><span class="p">,</span>
+            <span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;Californication&quot;</span><span class="p">,</span>
+            <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;Porcelain&quot;</span><span class="p">,</span>
+            <span class="mi">13</span><span class="p">:</span> <span class="s2">&quot;Right On Time&quot;</span><span class="p">,</span>
+            <span class="mi">14</span><span class="p">:</span> <span class="s2">&quot;Around the World&quot;</span><span class="p">,</span>
+            <span class="mi">15</span><span class="p">:</span> <span class="s2">&quot;Purple Stain&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;blood sugar sex magik&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Blood Sugar Sex Magik&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Red Hot Chili Peppers&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">1991</span><span class="p">,</span>
+        <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Funk&quot;</span><span class="p">,</span> <span class="s2">&quot;Alternative-rock&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;tracks&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;The Power of Equality&quot;</span><span class="p">,</span>
+            <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;If You Have to Ask&quot;</span><span class="p">,</span>
+            <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Breaking the Girl&quot;</span><span class="p">,</span>
+            <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;Funky Monks&quot;</span><span class="p">,</span>
+            <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;Suck My Kiss&quot;</span><span class="p">,</span>
+            <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;I Could Have Lied&quot;</span><span class="p">,</span>
+            <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;Mellowship Slinky in B Major&quot;</span><span class="p">,</span>
+            <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;The Righteous &amp; The Wicked&quot;</span><span class="p">,</span>
+            <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;Give It Away&quot;</span><span class="p">,</span>
+            <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;Blood Sugar Sex Magik&quot;</span><span class="p">,</span>
+            <span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;Under the Bridge&quot;</span><span class="p">,</span>
+            <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;Naked in the Rain&quot;</span><span class="p">,</span>
+            <span class="mi">13</span><span class="p">:</span> <span class="s2">&quot;Apache Rose Peacock&quot;</span><span class="p">,</span>
+            <span class="mi">14</span><span class="p">:</span> <span class="s2">&quot;The Greeting Song&quot;</span><span class="p">,</span>
+            <span class="mi">15</span><span class="p">:</span> <span class="s2">&quot;My Lovely Man&quot;</span><span class="p">,</span>
+            <span class="mi">16</span><span class="p">:</span> <span class="s2">&quot;Sir Psycho Sexy&quot;</span><span class="p">,</span>
+            <span class="mi">17</span><span class="p">:</span> <span class="s2">&quot;They&#39;re Red Hot&quot;</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;californication&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Blood Sugar Sex Magik&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;title&#39;: &#39;Californication&#39;, &#39;artist&#39;: &#39;Red Hot Chilli Peppers&#39;, &#39;year&#39;: 1999, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Punk-rock&#39;, &#39;Alternative-rock&#39;, &#39;Funk Rock&#39;], &#39;tracks&#39;: {1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;}}
+None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;californication&#39;</span><span class="p">)[</span><span class="s1">&#39;tracks&#39;</span><span class="p">])</span>
+<span class="c1"># or</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s1">&#39;californication&#39;</span><span class="p">][</span><span class="s1">&#39;tracks&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;}
+{1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;californication&#39;</span><span class="p">)[</span><span class="s1">&#39;tracks&#39;</span><span class="p">][</span><span class="mi">7</span><span class="p">])</span>
+<span class="c1"># or</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s1">&#39;californication&#39;</span><span class="p">][</span><span class="s1">&#39;tracks&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Easily
+Scar Tissue
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s2">&quot;members&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Anothony Kiedis&#39;</span><span class="p">,</span> <span class="s1">&#39;Flea&#39;</span><span class="p">,</span> <span class="s1">&#39;John Frusciante&#39;</span><span class="p">,</span> <span class="s1">&#39;Flea&#39;</span> <span class="s1">&#39;Chad Smith&#39;</span><span class="p">,</span> <span class="s1">&#39;Dave Navarro&#39;</span><span class="p">]</span>
+<span class="c1"># What can you change to make sure there are no duplicate producers?</span>
+<span class="c1"># We can add a set or make this list into a set so it won&#39;t duplicate</span>
+<span class="c1">#</span>
+
+<span class="c1"># Printing the dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;californication&#39;: {&#39;title&#39;: &#39;Californication&#39;, &#39;artist&#39;: &#39;Red Hot Chilli Peppers&#39;, &#39;year&#39;: 1999, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Punk-rock&#39;, &#39;Alternative-rock&#39;, &#39;Funk Rock&#39;], &#39;tracks&#39;: {1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;}}, &#39;Blood Sugar Sex Magik&#39;: {&#39;title&#39;: &#39;Blood Sugar Sex Magik&#39;, &#39;artist&#39;: &#39;Red Hot Chili Peppers&#39;, &#39;year&#39;: 1991, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Funk&#39;, &#39;Alternative-rock&#39;], &#39;tracks&#39;: {1: &#39;The Power of Equality&#39;, 2: &#39;If You Have to Ask&#39;, 3: &#39;Breaking the Girl&#39;, 4: &#39;Funky Monks&#39;, 5: &#39;Suck My Kiss&#39;, 6: &#39;I Could Have Lied&#39;, 7: &#39;Mellowship Slinky in B Major&#39;, 8: &#39;The Righteous &amp; The Wicked&#39;, 9: &#39;Give It Away&#39;, 10: &#39;Blood Sugar Sex Magik&#39;, 11: &#39;Under the Bridge&#39;, 12: &#39;Naked in the Rain&#39;, 13: &#39;Apache Rose Peacock&#39;, 14: &#39;The Greeting Song&#39;, 15: &#39;My Lovely Man&#39;, 16: &#39;Sir Psycho Sexy&#39;, 17: &#34;They&#39;re Red Hot&#34;}}, &#39;members&#39;: [&#39;Anothony Kiedis&#39;, &#39;Flea&#39;, &#39;John Frusciante&#39;, &#39;FleaChad Smith&#39;, &#39;Dave Navarro&#39;]}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s2">&quot;members&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;Anothony Kiedis&#39;</span><span class="p">,</span> <span class="s1">&#39;Flea&#39;</span><span class="p">,</span> <span class="s1">&#39;John Frusciante&#39;</span><span class="p">,</span> <span class="s1">&#39;Flea&#39;</span><span class="p">,</span> <span class="s1">&#39;Chad Smith&#39;</span><span class="p">,</span> <span class="s1">&#39;Dave Navarro&#39;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;californication&#39;: {&#39;title&#39;: &#39;Californication&#39;, &#39;artist&#39;: &#39;Red Hot Chilli Peppers&#39;, &#39;year&#39;: 1999, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Punk-rock&#39;, &#39;Alternative-rock&#39;, &#39;Funk Rock&#39;], &#39;tracks&#39;: {1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;}}, &#39;Blood Sugar Sex Magik&#39;: {&#39;title&#39;: &#39;Blood Sugar Sex Magik&#39;, &#39;artist&#39;: &#39;Red Hot Chili Peppers&#39;, &#39;year&#39;: 1991, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Funk&#39;, &#39;Alternative-rock&#39;], &#39;tracks&#39;: {1: &#39;The Power of Equality&#39;, 2: &#39;If You Have to Ask&#39;, 3: &#39;Breaking the Girl&#39;, 4: &#39;Funky Monks&#39;, 5: &#39;Suck My Kiss&#39;, 6: &#39;I Could Have Lied&#39;, 7: &#39;Mellowship Slinky in B Major&#39;, 8: &#39;The Righteous &amp; The Wicked&#39;, 9: &#39;Give It Away&#39;, 10: &#39;Blood Sugar Sex Magik&#39;, 11: &#39;Under the Bridge&#39;, 12: &#39;Naked in the Rain&#39;, 13: &#39;Apache Rose Peacock&#39;, 14: &#39;The Greeting Song&#39;, 15: &#39;My Lovely Man&#39;, 16: &#39;Sir Psycho Sexy&#39;, 17: &#34;They&#39;re Red Hot&#34;}}, &#39;members&#39;: {&#39;Flea&#39;, &#39;Chad Smith&#39;, &#39;John Frusciante&#39;, &#39;Anothony Kiedis&#39;, &#39;Dave Navarro&#39;}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s1">&#39;californication&#39;</span><span class="p">][</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">16</span><span class="p">:</span> <span class="s2">&quot;New Track&quot;</span><span class="p">})</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;californication&#39;: {&#39;title&#39;: &#39;Californication&#39;, &#39;artist&#39;: &#39;Red Hot Chilli Peppers&#39;, &#39;year&#39;: 1999, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Punk-rock&#39;, &#39;Alternative-rock&#39;, &#39;Funk Rock&#39;], &#39;tracks&#39;: {1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;, 16: &#39;New Track&#39;}}, &#39;Blood Sugar Sex Magik&#39;: {&#39;title&#39;: &#39;Blood Sugar Sex Magik&#39;, &#39;artist&#39;: &#39;Red Hot Chili Peppers&#39;, &#39;year&#39;: 1991, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Funk&#39;, &#39;Alternative-rock&#39;], &#39;tracks&#39;: {1: &#39;The Power of Equality&#39;, 2: &#39;If You Have to Ask&#39;, 3: &#39;Breaking the Girl&#39;, 4: &#39;Funky Monks&#39;, 5: &#39;Suck My Kiss&#39;, 6: &#39;I Could Have Lied&#39;, 7: &#39;Mellowship Slinky in B Major&#39;, 8: &#39;The Righteous &amp; The Wicked&#39;, 9: &#39;Give It Away&#39;, 10: &#39;Blood Sugar Sex Magik&#39;, 11: &#39;Under the Bridge&#39;, 12: &#39;Naked in the Rain&#39;, 13: &#39;Apache Rose Peacock&#39;, 14: &#39;The Greeting Song&#39;, 15: &#39;My Lovely Man&#39;, 16: &#39;Sir Psycho Sexy&#39;, 17: &#34;They&#39;re Red Hot&#34;}}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">rhcp_albums</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>californication: {&#39;title&#39;: &#39;Californication&#39;, &#39;artist&#39;: &#39;Red Hot Chilli Peppers&#39;, &#39;year&#39;: 1999, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Punk-rock&#39;, &#39;Alternative-rock&#39;, &#39;Funk Rock&#39;], &#39;tracks&#39;: {1: &#39;Scar Tissue&#39;, 2: &#39;Savior&#39;, 3: &#39;Otherside&#39;, 4: &#39;Parallel Universe&#39;, 5: &#39;The Velvet Glove&#39;, 6: &#39;I Like Dirt&#39;, 7: &#39;Easily&#39;, 8: &#39;Emit Remmus&#39;, 9: &#34;Road Trippin&#39;&#34;, 10: &#39;Get on Top&#39;, 11: &#39;Californication&#39;, 12: &#39;Porcelain&#39;, 13: &#39;Right On Time&#39;, 14: &#39;Around the World&#39;, 15: &#39;Purple Stain&#39;, 16: &#39;Under The Bridge&#39;}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which Album would you like to know about?&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid Search&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+
+<span class="n">search</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;title&#39;: &#39;Blood Sugar Sex Magik&#39;, &#39;artist&#39;: &#39;Red Hot Chili Peppers&#39;, &#39;year&#39;: 1991, &#39;genre&#39;: [&#39;Rock&#39;, &#39;Funk&#39;, &#39;Alternative-rock&#39;], &#39;tracks&#39;: {1: &#39;The Power of Equality&#39;, 2: &#39;If You Have to Ask&#39;, 3: &#39;Breaking the Girl&#39;, 4: &#39;Funky Monks&#39;, 5: &#39;Suck My Kiss&#39;, 6: &#39;I Could Have Lied&#39;, 7: &#39;Mellowship Slinky in B Major&#39;, 8: &#39;The Righteous &amp; The Wicked&#39;, 9: &#39;Give It Away&#39;, 10: &#39;Blood Sugar Sex Magik&#39;, 11: &#39;Under the Bridge&#39;, 12: &#39;Naked in the Rain&#39;, 13: &#39;Apache Rose Peacock&#39;, 14: &#39;The Greeting Song&#39;, 15: &#39;My Lovely Man&#39;, 16: &#39;Sir Psycho Sexy&#39;, 17: &#34;They&#39;re Red Hot&#34;}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">album</span> <span class="ow">in</span> <span class="n">rhcp_albums</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="n">album</span><span class="p">[</span><span class="s2">&quot;producer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Rick Rubin&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">[</span><span class="s1">&#39;californication&#39;</span><span class="p">][</span><span class="s1">&#39;producer&#39;</span><span class="p">])</span>
+   
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Rick Rubin
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_albums_after_year</span><span class="p">(</span><span class="n">album_dict</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a list of album titles released after the given year.&quot;&quot;&quot;</span>
+    <span class="n">albums_after_year</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">album</span> <span class="ow">in</span> <span class="n">album_dict</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">album</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">year</span><span class="p">:</span>
+            <span class="n">albums_after_year</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">album</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">albums_after_year</span>
+
+<span class="n">get_albums_after_year</span><span class="p">(</span><span class="n">rhcp_albums</span><span class="p">,</span> <span class="mi">1998</span><span class="p">)</span>
+<span class="p">[</span><span class="s1">&#39;Californication&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Californication&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed<ul>
+<li>You Belong With Me</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FirstFastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://jakewarren2414.github.io/FirstFastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FirstFastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>I am a sudent at Del Norte High School and I play football.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
